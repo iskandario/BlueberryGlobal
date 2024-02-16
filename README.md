@@ -1,2 +1,1 @@
-# BlueberryGlobal
-test com
+ # BlueberryGlobal - Landing page
