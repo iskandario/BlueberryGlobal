@@ -1,7 +1,7 @@
 .header {
+	width: 100%;
 	background-color: #12171f;
 	height: 1492px;
-	width: 856px;
 	overflow: hidden;
 }
 
@@ -104,6 +104,9 @@
 	position: absolute;
 	top: 0px;
 	z-index: 1;
+	width: 100%;
+	min-width: 856px;
+	max-width: 1280px;
 }
 
 .header__containerButton {
@@ -112,12 +115,16 @@
 	position: relative;
 	z-index: 1;
 	height: 545px;
+	width: 100%;
 }
 
 .header__planet {
 	position: absolute;
-	top: 0px;
+	top: 400px;
 	z-index: 2;
+	width: 100%;
+	min-width: 856px;
+	max-width: 1280px;
 }
 .header__img-downArrow {
 	position: absolute;
