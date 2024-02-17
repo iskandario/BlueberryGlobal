@@ -1,7 +1,7 @@
 .header {
 	background-color: #12171f;
 	height: 1492px;
-	width: 860px;
+	width: 856px;
 	overflow: hidden;
 }
 
@@ -105,6 +105,7 @@
 	top: 0px;
 	z-index: 1;
 }
+
 .header__containerButton {
 	margin-top: 520px;
 	background-color: #374055;
@@ -120,9 +121,9 @@
 }
 .header__img-downArrow {
 	position: absolute;
-	right: 10px;
-	bottom: 113px;
 	z-index: 3;
+	bottom: 10px;
+	left: 400px;
 }
 
 .header__img-text {
