@@ -1,6 +1,8 @@
 .header {
 	background-color: #12171f;
 	height: 1492px;
+	width: 860px;
+	overflow: hidden;
 }
 
 .header__logo {
@@ -31,6 +33,8 @@
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
 	color: transparent; /* Скрыть обычный текст */
+	position: relative;
+	z-index: 2;
 }
 
 .header__title2 {
@@ -49,4 +53,80 @@
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
+	position: relative;
+	z-index: 2;
+}
+
+.header__subtitle {
+	margin: 23px 0px 0px 0px;
+	color: #fbfbfb;
+	font-size: 20px;
+	width: 272px;
+	font-family: 'Inter', sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 100;
+	font-style: normal;
+	word-spacing: 5px;
+	position: relative;
+	z-index: 2;
+}
+
+.header__button {
+	margin-right: 87px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: none;
+	border: none;
+	color: #273146;
+	background-image: linear-gradient(
+		195deg,
+		#6c81bd 25%,
+		#90ca94
+	); /* Градиентный фон кнопки */
+	height: 40px;
+	width: 193px;
+	border-radius: 151px;
+	cursor: pointer;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	font-weight: 700;
+	text-align: center;
+	font-size: 14px;
+	text-align: left;
+	word-spacing: 3px;
+}
+.header__button-img {
+	padding-top: 3px;
+	padding-left: 10px;
+}
+
+.header__line {
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+}
+.header__containerButton {
+	margin-top: 520px;
+	background-color: #374055;
+	position: relative;
+	z-index: 1;
+	height: 545px;
+}
+
+.header__planet {
+	position: absolute;
+	top: 0px;
+	z-index: 2;
+}
+.header__img-downArrow {
+	position: absolute;
+	right: 10px;
+	bottom: 113px;
+	z-index: 3;
+}
+
+.header__img-text {
+	position: absolute;
+	right: 49px;
+	bottom: 70px;
 }
