@@ -30,11 +30,11 @@
 		195deg,
 		#6c81bd 25%,
 		#90ca94
-	); /* Замените цвета на нужные вам */
+	); 
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	color: transparent; /* Скрыть обычный текст */
+	color: transparent; 
 	position: relative;
 	z-index: 2;
 }

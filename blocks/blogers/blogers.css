@@ -8,8 +8,7 @@
 	margin-top: 5.5%;
 	margin-left: 30.5%;
 	z-index: 2;
-	top: 69px;
-	left: 388px;
+
 }
 .container {
 	display: flex;
@@ -20,25 +19,30 @@
 }
 .text-section {
 	list-style-type: none;
-	margin-top: 5.5%;
-	margin-left: auto;
+	margin-top: 70px;
+	margin-left: 275px;
 	margin-right: auto;
 	min-width: 520px;
 	width: 50%;
 }
 .heading {
-	margin-left: 10%;
+  margin-top: px;
+	margin-left: 74px;
 	font-size: NEXTART;
 	font-size: 20px;
 	font-weight: 400;
 	color: white;
 }
 .item {
-	margin-top: 3%;
+  margin-top: 35px;
+  height: 92px;
 }
 .text1 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 400; /* Например, для нормального начертания */
+  font-style: normal; /* Для обычного стиля */
 }
 
 .item:not(:last-child) {
-	border-bottom: 2px solid white;
+	border-bottom: 1.5px solid white;
 }
