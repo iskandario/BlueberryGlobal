@@ -1,0 +1,48 @@
+.blogers {
+  border: solid 1px red;
+  background-color: #374055;
+  height: 1028px;
+  position: relative;
+
+}
+.blogers__img {
+margin-top: 5.5%;
+margin-left: 30.5%;
+  z-index: 2;
+  top: 69px;
+  left: 388px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; /* или max-width для ограничения ширины */
+  padding: 20px; /* Подстройте отступы по вашему дизайну */
+}
+.text-section{
+ 
+  list-style-type: none;
+  margin-top: 5.5%;
+  margin-left: 21%;
+  max-width: 650px;
+}
+.heading{
+  margin-left: 10%;
+  font-size: NEXTART;
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+
+}
+.item{
+  margin-top: 3%;
+}
+.text1{
+
+}
+
+.item:not(:last-child){
+  border-bottom: 2px solid white;
+
+
+}
