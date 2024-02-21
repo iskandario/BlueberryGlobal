@@ -5,6 +5,7 @@
 	position: relative;
 }
 .blogers__img {
+  position: relative;
 	margin-top: 5.5%;
 	margin-left: 30.5%;
 	z-index: 2;
@@ -17,7 +18,7 @@
 	width: 100%; /* или max-width для ограничения ширины */
 	padding: 20px; /* Подстройте отступы по вашему дизайну */
 }
-.text-section {
+.blogers__text-section {
   position: relative;
   z-index: 3;
 	list-style-type: none;
@@ -28,7 +29,7 @@
 	width: 50%;
   
 }
-.heading {
+.blogers__heading {
   margin-top: px;
 	margin-left: 74px;
 	font-size: NEXTART;
@@ -36,11 +37,11 @@
 	font-weight: 400;
 	color: white;
 }
-.item {
+.blogers__item {
   margin-top: 35px;
   height: 92px;
 }
-.text1 {
+.blogers__text1 {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 550; 
   font-size: 14px; 
@@ -56,23 +57,23 @@
 	color: transparent; 
 }
 
-.item:not(:last-child) {
+.blogers__item:not(:last-child) {
 	border-bottom: 1.5px solid white;
 }
 
-.berry1__img, .berry2__img, .berry3__img {
+.blogers__berry1__img, .blogers__berry2__img, .blogers__berry3__img {
   position: absolute; 
   z-index: 1; 
 }
-.berry3__img{
+.blogers__berry3__img{
   right: 150px;
   top: 50px;
 }
-.berry2__img{
+.blogers__berry2__img{
   left: 115px;
   top: 314px;
 }
-.berry1__img{
+.blogers__berry1__img{
   left: 522px;
-  bottom: -80px;
+  bottom: -95px;
 }
