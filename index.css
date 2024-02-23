@@ -5,5 +5,6 @@
 @import url(./blocks/page/page.css);
 
 @import url(./blocks/header/header.css);
-@import url(blocks/blogers/blogers.css);
-@import url(blocks/cases/cases.css);
+@import url(./blocks/blogers/blogers.css);
+@import url(./blocks/cases/cases.css);
+@import url(./blocks/advertisers/advertisers.css);
