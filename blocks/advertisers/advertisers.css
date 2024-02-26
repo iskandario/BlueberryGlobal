@@ -1,0 +1,64 @@
+.advertisers{
+  height: 698px;
+  position: relative;
+  background-color: #0F151D;
+}
+
+.advertisers__img{
+  margin-left: 397px;
+  margin-top: 25px;
+}
+
+.advertisers__text-section{
+  position: relative;
+  z-index: 3;
+	list-style-type: none;
+	margin-top: 73px;
+	margin-left: 285px;
+	margin-right: auto;
+	min-width: 520px;
+	width: 55%;
+}
+
+.advertisers__heading{
+  margin-top: px;
+	margin-left: 74px;
+	font-size: NEXTART;
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+}
+
+.advertisers__text{
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 550; 
+  font-size: 14px; 
+  font-style: normal; 
+  background-image: linear-gradient(
+		120deg,
+
+		#6c81bd  ,
+    #90ca94 60%
+		
+	); 
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	color: transparent; 
+}
+
+.advertisers__item{
+  margin-top: 35px;
+  height: 92px;
+}
+.advertisers__item:not(:last-child) {
+	border-bottom: 1.5px solid white;
+}
+
+.advertisers__ellipse__img{
+  position: absolute; 
+  z-index: 1;
+  top: 180px;
+  right: 180px;
+
+}
