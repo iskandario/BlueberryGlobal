@@ -26,15 +26,11 @@
 	font-style: normal;
 	text-align: left;
 	max-height: 200px;
-	background-image: linear-gradient(
-		195deg,
-		#6c81bd 25%,
-		#90ca94
-	); 
+	background-image: linear-gradient(195deg, #6c81bd 25%, #90ca94);
 	-webkit-background-clip: text;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
-	color: transparent; 
+	color: transparent;
 	position: relative;
 	z-index: 2;
 }

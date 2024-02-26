@@ -1,4 +1,6 @@
 @import url(./vendor/normalize.css);
+
+@import url(./fonts/stylesheet.css);
 @import url(./fonts/NEXTART.css);
 @import url(./fonts/museo.woff2);
 @import url(./blocks/body/body.css);
@@ -8,3 +10,4 @@
 @import url(./blocks/blogers/blogers.css);
 @import url(./blocks/cases/cases.css);
 @import url(./blocks/advertisers/advertisers.css);
+@import url(./blocks/footer/footer.css);

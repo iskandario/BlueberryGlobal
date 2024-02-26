@@ -1,7 +1,6 @@
 .page {
 	margin: 0 auto;
-	/* выше для экранов больше 1600px отцентрировали весь контент */
-	font-family: 'Helvetica Neue', Arial, sans-serif;
+	/* font-family: 'Helvetica Neue', Arial, sans-serif; */
 	min-width: 856px;
 }
 
@@ -9,4 +8,38 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: end;
+}
+
+.btn {
+	display: inline-block;
+	font-weight: 400;
+	color: #212529;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	line-height: 1.5;
+	border-radius: 0.25rem;
+}
+
+.btn:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+.btn-img {
+	position: absolute;
+	right: 12%;
+	bottom: 28.5%;
+	height: 40%;
+}
+
+.link {
+	color: #9b9b9c;
+	text-decoration: none;
 }
