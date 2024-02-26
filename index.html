@@ -7,10 +7,7 @@
 	<meta name="description" content="#" />
 	<meta name="keywords" content="#" />
 	<meta name="author" content="#" />
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
-		rel="stylesheet" />
+
 	<link rel="stylesheet" href="./index.css" />
 	<title>BlueberryGlobal</title>
 </head>
@@ -43,7 +40,7 @@
 		<main class="content">
 			<section class="blogers">
 				<img src="./images/blogers.svg" class="blogers__img" />
-				
+
 				<ul class="blogers__text-section">
 					<li class="blogers__item">
 						<h2 class="blogers__heading">МЕНЕДЖМЕНТ</h2>
@@ -86,34 +83,61 @@
 			</section>
 
 			<section class="cases">
-				<img src="./images/Berry 5.svg" class="cases__berry5__img"/>
-				<img src="./images/Berry 6.svg" class="cases__berry6__img"/>
+				<img src="./images/Berry 5.svg" class="cases__berry5__img" />
+				<img src="./images/Berry 6.svg" class="cases__berry6__img" />
 				<img src="./images/100 +.svg" class="cases__100__img" />
 				<h2 class="cases__heading">КЕЙСОВ С БРЕНДАМИ И БЛОГЕРАМИ</h2>
 				<p class="cases__text">Которые продолжают выбирать нас и ведут<br>
-					продолжительное  сотрудничество</p>
+					продолжительное сотрудничество</p>
 			</section>
 		</main>
 
 
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="footer__heading">
+				<img src="./images/footerMainText.svg" class="footer__main-text">
+				<button type="button" onclick="location.href='#'" class="btn footer__button">
+					Написать
+					<img class="btn-img" src="./images/Arrow.svg" />
+				</button>
+			</div>
+			<div class="footer__columns">
+				<div class="footer__aboutUs">
+					<h1 class="footer__aboutUs-title">Blueberry Global</h1>
+					<p class="footer__aboutUs-paragraph">Мы верим в силу цифровых технологий для <br>
+						преобразования бизнеса и <br>
+						установления связей с аудиторией</p>
+					<p class="footer__aboutUs-author">Founder: Arthur Kabanoff</p>
+				</div>
+				<nav class="footer__nav">
+					<h2 class="footer__nav-title">Навигация</h2>
+					<ul class="footer__list">
+						<li class="footer__item"><a href="#section1" class="footer__link">Агентство</a></li>
+						<li class="footer__item"><a href="#section2" class="footer__link">Для блогеров</a></li>
+						<li class="footer__item"><a href="#section3" class="footer__link">Кейсы</a></li>
+						<li class="footer__item"><a href="#section4" class="footer__link">Рекламодателям</a></li>
+					</ul>
+				</nav>
+				<div class="footer__contacts">
+					<h1 class="footer__contacts-title">Контакты</h1>
+					<p class="footer__contacts-copy">ad@blueberryglobal.ru</p>
+					<p class="footer__contacts-copy"><a class="link" href="t.me/blueberryglobal">t.me/blueberryglobal</a></p>
+				</div>
+			</div>
+
+		</footer>
 	</div>
+
 	<script>
-		// Функция, которая устанавливает высоту для .header__containerBottom равной высоте .header__planet
 		function adjustBottomContainerHeight() {
-			// Получение элемента .header__planet и вычисление его высоты
 			var planet = document.querySelector('.header__planet');
 			var planetHeight = planet.offsetHeight;
-
-			// Установка высоты .header__containerBottom равной высоте .header__planet
 			var containerBottom = document.querySelector('.header__containerBottom');
+
 			containerBottom.style.height = planetHeight - 800 + 'px';
 		}
 
-		// Вызов функции adjustBottomContainerHeight после полной загрузки контента страницы
 		document.addEventListener('DOMContentLoaded', adjustBottomContainerHeight);
-
-		// Добавление обработчика события resize для вызова функции adjustBottomContainerHeight при изменении размеров окна
 		window.addEventListener('resize', adjustBottomContainerHeight);
 	</script>
 
