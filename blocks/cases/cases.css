@@ -12,7 +12,7 @@
 .cases__heading {
 	margin-top: 55px;
 	margin-left: 322px;
-	font-size: NEXTART;
+	font-family: NEXTART;
 	font-size: 19.9px;
 	font-weight: 400;
 	color: #939ab1;
@@ -44,4 +44,43 @@
 	right: 268px;
 	top: 109px;
 	z-index: 1;
+}
+
+.slider {
+  position: relative; /* для позиционирования кнопок внутри */
+  overflow: hidden; /* чтобы изображения за пределами блока не отображались */
+  width: 50%; /* ширина блока под размер родителя */
+  z-index: 5;
+  margin: 20px auto;
+}
+
+.slider-line {
+  display: flex; /* чтобы элементы шли в ряд */
+  transition: transform 0.5s ease; /* плавное смещение при прокрутке */
+  margin: 0; /* убрать стандартные отступы */
+  padding: 0; /* убрать стандартные отступы */
+}
+
+.slider__btn {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ddd;
+  border: none;
+  padding: 10px 15px;
+  z-index: 5;
+}
+
+.slider__btn--prev {
+  left: 0;
+}
+
+.slider__btn--next {
+  right: 0;
+}
+
+.cases__item {
+  flex: 0 0 auto; /* Это позволяет элементам быть независимыми по ширине */
+  width: 25%; /* Поскольку отображается 4 изображения, каждое должно занимать 25% ширины */
 }
