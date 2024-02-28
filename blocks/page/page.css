@@ -43,3 +43,7 @@
 	color: #9b9b9c;
 	text-decoration: none;
 }
+
+.link:hover {
+	color: #cccccc;
+}
