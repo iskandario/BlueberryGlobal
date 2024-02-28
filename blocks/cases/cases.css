@@ -51,7 +51,7 @@
   overflow: hidden; /* чтобы изображения за пределами блока не отображались */
   width: 50%; /* ширина блока под размер родителя */
   z-index: 5;
-  margin: 20px auto;
+  margin: 90px auto;
 }
 
 .slider-line {

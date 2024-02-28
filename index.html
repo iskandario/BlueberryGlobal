@@ -90,7 +90,6 @@
 				<p class="cases__text">Которые продолжают выбирать нас и ведут<br>
 					продолжительное сотрудничество</p>
 				<div class="slider">
-					<div class="slider__btn slider__btn--prev">&#10094;</div>
 					<div class="slider-line">
 					<img src="./images/Ellipse 1.png" class="cases__item" />
 					<img src="./images/Ellipse 2.png" class="cases__item" />
@@ -102,7 +101,6 @@
 					<img src="./images/Ellipse 4.png" class="cases__item" />
 			
 				</div>
-				<div class="slider__btn slider__btn--next">&#10095;</div>
 				</div>
 	
 	
@@ -193,75 +191,6 @@
 		window.addEventListener('resize', adjustBottomContainerHeight);
 	</script>
 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  const sliderLine = document.querySelector('.slider-line');
-  const prevButton = document.querySelector('.slider__btn--prev');
-  const nextButton = document.querySelector('.slider__btn--next');
-  let step; // Шаг будет определен после загрузки страницы
-  let currentIndex = 0;
-
-  function updateStep() {
-    step = sliderLine.offsetWidth / 4;
-  }
-
-  function updateSlider() {
-    const offset = -(step * currentIndex);
-    sliderLine.style.transform = `translateX(${offset}px)`;
-  }
-
-  // Обновление шага и слайдера при загрузке страницы и изменении размера окна
-  window.addEventListener('load', updateStep);
-  window.addEventListener('resize', function() {
-    updateStep();
-    updateSlider();
-  });
-
-  prevButton.addEventListener('click', function() {
-    if (currentIndex === 0) {
-      // Мгновенный переход к концу без анимации
-      sliderLine.style.transition = 'none';
-      currentIndex = sliderLine.children.length - 4;
-      updateSlider();
-
-      // Возвращаем анимацию и делаем шаг назад
-      setTimeout(() => {
-        sliderLine.style.transition = '';
-        currentIndex--;
-        updateSlider();
-      }, 10);
-    } else {
-      currentIndex--;
-      updateSlider();
-    }
-  });
-
-  nextButton.addEventListener('click', function() {
-    if (currentIndex >= sliderLine.children.length - 4) {
-      // Мгновенный переход в начало без анимации
-      sliderLine.style.transition = 'none';
-      currentIndex = 0;
-      updateSlider();
-
-      // Возвращаем анимацию и делаем шаг вперед
-      setTimeout(() => {
-        sliderLine.style.transition = '';
-        currentIndex++;
-        updateSlider();
-      }, 10);
-    } else {
-      currentIndex++;
-      updateSlider();
-    }
-  });
-
-  // Инициализируем слайдер
-  updateStep();
-  updateSlider();
-});
-
-
-</script>
 
 </body>
 
