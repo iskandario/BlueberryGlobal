@@ -30,7 +30,6 @@
   
 }
 .blogers__heading {
-  margin-top: px;
 	margin-left: 74px;
 	font-family: NEXTART;
 	font-size: 20px;
@@ -66,14 +65,14 @@
   z-index: 1; 
 }
 .blogers__berry3__img{
-  right: 150px;
+  right: 1%;
   top: 50px;
 }
 .blogers__berry2__img{
-  left: 115px;
+  left: 1%;
   top: 314px;
 }
 .blogers__berry1__img{
-  left: 522px;
+  left: 40%;
   bottom: -95px;
 }
