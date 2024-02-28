@@ -110,14 +110,6 @@
 	font-weight: bold;
 }
 
-.footer__link {
-	color: #9b9b9c;
-	text-decoration: none;
-}
-
-.footer__link:hover {
-}
-
 .footer__contacts {
 	margin-right: 40px;
 }
