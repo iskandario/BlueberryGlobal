@@ -106,15 +106,43 @@
 	width: 100%;
 	min-width: 856px;
 }
-
-.header__containerBottom {
+.header__containerBox {
 	margin-top: 520px;
 	background-color: #374055;
 	position: relative;
 	z-index: 1;
 	width: 100%;
 	min-height: 656px;
-	max-height: 1500px;
+}
+
+@media screen and (min-width: 1200px) {
+	.header__containerBox {
+		height: 800px;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	.header__containerBox {
+		height: 900px;
+	}
+}
+
+@media screen and (min-width: 1600px) {
+	.header__containerBox {
+		height: 1000px;
+	}
+}
+
+@media screen and (min-width: 1800px) {
+	.header__containerBox {
+		height: 1100px;
+	}
+}
+
+@media screen and (min-width: 2000px) {
+	.header__containerBox {
+		height: 1200px;
+	}
 }
 
 .header__planet {
