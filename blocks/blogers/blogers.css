@@ -7,7 +7,7 @@
 .blogers__img {
   position: relative;
 	margin-top: 5.5%;
-	margin-left: 30.5%;
+	margin-left: 30%;
 	z-index: 2;
 
 }
@@ -23,7 +23,7 @@
   z-index: 3;
 	list-style-type: none;
 	margin-top: 70px;
-	margin-left: 275px;
+	margin-left: auto;
 	margin-right: auto;
 	min-width: 520px;
 	width: 50%;
