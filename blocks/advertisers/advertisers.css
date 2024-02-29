@@ -6,7 +6,6 @@
 
 .advertisers__img{
   margin-left: 30%;
-  
 }
 
 .advertisers__text-section{
@@ -24,7 +23,7 @@
 	margin-left: 74px;
 	font-family: NEXTART;
 	font-size: 20px;
-	font-weight: 400;
+	font-weight: normal;
 	color: white;
 }
 
@@ -32,13 +31,10 @@
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-weight: 550; 
   font-size: 14px; 
-  font-style: normal; 
   background-image: linear-gradient(
 		120deg,
-
-		#6c81bd  ,
+		#6c81bd,
     #90ca94 60%
-		
 	); 
 	-webkit-background-clip: text;
 	background-clip: text;
@@ -59,5 +55,4 @@
   z-index: 1;
   top: 180px;
   left: 50%;
-
 }
