@@ -13,9 +13,9 @@
 </head>
 
 <body class="body">
-	<div class="page">
+	< class="page">
 
-		<header class="header">
+		<header class="header" id="header">
 			<img src="./images/Logo.svg" class="header__logo" alt="Логотип" />
 			<div class="header__container">
 				<h1 class="header__title">Confronting marketing</h1>
@@ -24,21 +24,22 @@
 					<h2 class="header__subtitle">
 						Обеспечение блогеров рекламой и менеджментом
 					</h2>
-					<button type="button" onclick="location.href='#'" class="header__button">
+					<button type="button" onclick="location.href='#cases'" class="btn header__button">
 						С кем мы работаем
-						<img class="header__button-img" src="./images/Arrow.svg" />
+						<img class="btn-img header_btn-img" src="./images/Arrow.svg" />
 					</button>
 				</div>
 			</div>
 			<img class="header__line" src="./images/line.svg" />
 			<img class="header__planet" src="./images/Planet.svg" />
 			<div class="header__containerBox">
-				<img class="header__img-text" src="./images/we are marketing.svg" />
+				<img class="header__img-eclipse" src="./images/Elipse.svg" alt="Картинка круга со стрелкой">
+				<img class="header__img-text" src="./images/we are marketing.svg" alt="Надпись we are marketing" />
 			</div>
 		</header>
 
 		<main class="content">
-			<section class="blogers">
+			<section class="blogers" id="blogers">
 				<img src="./images/blogers.svg" class="blogers__img" />
 
 				<ul class="blogers__text-section">
@@ -82,7 +83,7 @@
 				<img src="./images/berry3.svg" class="blogers__berry3__img" />
 			</section>
 
-			<section class="cases">
+			<section class="cases" id="cases">
 				<img src="./images/Berry 5.svg" class="cases__berry5__img" />
 				<img src="./images/Berry 6.svg" class="cases__berry6__img" />
 				<img src="./images/100 +.svg" class="cases__100__img" />
@@ -106,7 +107,7 @@
 
 			</section>
 
-			<section class="advertisers">
+			<section class="advertisers" id="advertisers">
 				<img src="./images/advertisers.svg" class="advertisers__img" />
 				<ul class="advertisers__text-section">
 					<li class="advertisers__item">
@@ -141,8 +142,10 @@
 
 
 		<footer class="footer">
-			<div class="footer__heading">
-				<img src="./images/footerMainText.svg" class="footer__main-text">
+			<div class="footer__main">
+				<h1 class="footer__main-text">
+					ГОТОВЫ К <span class="span-bold">РАБОТЕ <br>С BLUEBERRY?</span>
+				</h1>
 				<button type="button" onclick="window.open('https://t.me/blueberryglobal', '_blank')"
 					class="btn footer__button">
 					Написать
@@ -160,10 +163,10 @@
 				<nav class="footer__nav">
 					<h2 class="footer__nav-title">Навигация</h2>
 					<ul class="footer__list">
-						<li class="footer__item"><a href="#section1" class="link">Агентство</a></li>
-						<li class="footer__item"><a href="#section2" class="link">Для блогеров</a></li>
-						<li class="footer__item"><a href="#section3" class="link">Кейсы</a></li>
-						<li class="footer__item"><a href="#section4" class="link">Рекламодателям</a></li>
+						<li class="footer__item"><a href="#header" class="link">Агентство</a></li>
+						<li class="footer__item"><a href="#blogers" class="link">Для блогеров</a></li>
+						<li class="footer__item"><a href="#cases" class="link">Кейсы</a></li>
+						<li class="footer__item"><a href="#advertisers" class="link">Рекламодателям</a></li>
 					</ul>
 				</nav>
 				<div class="footer__contacts">
@@ -176,20 +179,20 @@
 			</div>
 
 		</footer>
-	</div>
+		</div>
 
-	<script>
+		<!-- <script>
 		function adjustBottomContainerHeight() {
 			var planet = document.querySelector('.header__planet');
 			var planetHeight = planet.offsetHeight;
-			var containerBottom = document.querySelector('.header__containerBottom');
+			var containerBottom = document.querySelector('.header__containerBox');
 
 			containerBottom.style.height = planetHeight - 800 + 'px';
 		}
 
 		document.addEventListener('DOMContentLoaded', adjustBottomContainerHeight);
 		window.addEventListener('resize', adjustBottomContainerHeight);
-	</script>
+	</script> -->
 
 
 </body>
