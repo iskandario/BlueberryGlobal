@@ -213,13 +213,10 @@
 				let currentIndex = 0;
 
 				function switchSlide(newIndex) {
-					const slideWidth = document.querySelector('.slide').clientWidth;
-					const newTransform = -newIndex * slideWidth;
-					document.querySelector('.slides').style.transform = `translateX(${newTransform}px)`;
-
+					slides[currentIndex].classList.remove('active');
+					slides[newIndex].classList.add('active');
 					currentIndex = newIndex;
 				}
-
 
 				function initSlider() {
 					slides[currentIndex].classList.add('active');

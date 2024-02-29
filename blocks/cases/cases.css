@@ -66,17 +66,22 @@
 
 .slides {
 	display: flex;
-	width: 100%;
+	justify-content: center;
+	align-items: center;
 	transition: transform 0.5s ease;
 }
 
 .slide {
-	flex-shrink: 0;
 	width: 100%;
+	flex-shrink: 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* Удалите opacity, visibility и position */
+	transition: opacity 0.5s ease;
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
 }
 
 .slide.active {
