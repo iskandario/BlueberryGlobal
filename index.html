@@ -207,35 +207,38 @@
 	</script> -->
 
 
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const slides = document.querySelectorAll('.slide');
-			let currentIndex = 0;
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const slides = document.querySelectorAll('.slide');
+				let currentIndex = 0;
 
-			function switchSlide(newIndex) {
-				slides[currentIndex].classList.remove('active');
-				slides[newIndex].classList.add('active');
-				currentIndex = newIndex;
-			}
+				function switchSlide(newIndex) {
+					const slideWidth = document.querySelector('.slide').clientWidth;
+					const newTransform = -newIndex * slideWidth;
+					document.querySelector('.slides').style.transform = `translateX(${newTransform}px)`;
 
-			function initSlider() {
-				slides[currentIndex].classList.add('active');
-				document.querySelector('.left').addEventListener('click', () => {
-					const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
-					switchSlide(newIndex);
-				});
-
-				document.querySelector('.right').addEventListener('click', () => {
-					const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
-					switchSlide(newIndex);
-				});
-			}
-
-			initSlider();
-		});
+					currentIndex = newIndex;
+				}
 
 
-	</script>
+				function initSlider() {
+					slides[currentIndex].classList.add('active');
+					document.querySelector('.left').addEventListener('click', () => {
+						const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+						switchSlide(newIndex);
+					});
+
+					document.querySelector('.right').addEventListener('click', () => {
+						const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+						switchSlide(newIndex);
+					});
+				}
+
+				initSlider();
+			});
+
+
+		</script>
 </body>
 
 </html>
