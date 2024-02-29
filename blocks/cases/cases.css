@@ -6,12 +6,12 @@
 }
 .cases__100__img {
 	position: relative;
-	left: 321px;
+	left: 25%;
 	top: 28px;
 }
 .cases__heading {
 	margin-top: 55px;
-	margin-left: 322px;
+	margin-left: 25%;
 	font-family: NEXTART;
 	font-size: 19.9px;
 	font-weight: 400;
@@ -20,7 +20,7 @@
 .cases__text {
 	line-height: 1.25;
 	margin-top: -15px;
-	margin-left: 320px;
+	margin-left: 25%;
 	font-family: 'Plus Jakarta Sans', sans-serif;
 	font-weight: 550;
 	font-size: 14.1px;
@@ -46,41 +46,87 @@
 	z-index: 1;
 }
 
+.slider-wrapper {
+  position: relative; 
+  width: 55%; 
+  margin: 7% auto; 
+  overflow: visible; 
+	z-index: 5;
+}
+
+.slider-container {
+  width: 100%; 
+  overflow: hidden; 
+}
+
 .slider {
-  position: relative; /* для позиционирования кнопок внутри */
-  overflow: hidden; /* чтобы изображения за пределами блока не отображались */
-  width: 50%; /* ширина блока под размер родителя */
-  z-index: 5;
-  margin: 90px auto;
+  width: 100%; 
+  padding: 0; 
 }
 
-.slider-line {
-  display: flex; /* чтобы элементы шли в ряд */
-  transition: transform 0.5s ease; /* плавное смещение при прокрутке */
-  margin: 0; /* убрать стандартные отступы */
-  padding: 0; /* убрать стандартные отступы */
+.slides {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  transition: transform 0.5s ease;
 }
 
-.slider__btn {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #ddd;
-  border: none;
-  padding: 10px 15px;
-  z-index: 5;
-}
-
-.slider__btn--prev {
+.slide {
+  width: 100%; 
+  flex-shrink: 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  transition: opacity 0.5s ease;
+  opacity: 0; 
+  visibility: hidden; 
+  position: absolute; 
   left: 0;
 }
 
-.slider__btn--next {
-  right: 0;
+.slide.active {
+  opacity: 1;
+  visibility: visible; 
+  position: relative; 
 }
 
 .cases__item {
-  flex: 0 0 auto; /* Это позволяет элементам быть независимыми по ширине */
-  width: 25%; /* Поскольку отображается 4 изображения, каждое должно занимать 25% ширины */
+  max-width: 23%; 
+  margin: 0 3px; 
+  flex: 1; 
 }
+
+
+.slider-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  width: 50px; 
+  height: 50px; 
+}
+
+.left {
+  left: -7%; 
+}
+
+.right {
+  right: -7%; 
+}
+
+.left, .right {
+  width: 50px; 
+  height: 50px; 
+}
+
+.slider-control:hover img {
+  opacity: 0.8;
+}
+
+.slider-control:active img {
+  opacity: 0.6;
+}
+
