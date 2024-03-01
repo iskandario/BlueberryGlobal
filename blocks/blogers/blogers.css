@@ -17,15 +17,15 @@
 	z-index: 3;
 	list-style-type: none;
 	margin-top: 70px;
-	margin-left: 15%;
+	margin-left: 4%;
 	margin-right: auto;
 	min-width: 520px;
-	width: 60%;
+	width: 80%;
 }
 .blogers__heading {
 	margin-left: 12%;
 	font-family: NEXTART;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: 400;
 	color: white;
 }
@@ -36,7 +36,7 @@
 .blogers__text1 {
 	font-family: 'Plus Jakarta Sans', sans-serif;
 	font-weight: 550;
-	font-size: 14px;
+	font-size: 16px;
 	font-style: normal;
 	background-image: linear-gradient(20deg, #6c81bd 20%, #90ca94);
 	-webkit-background-clip: text;
@@ -79,15 +79,16 @@
 	color: white;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 856px) {
 	.blogers {
-		height: 700px;
+		height: 800px;
 	}
 
 	.blogers__text-section {
 		min-width: 0;
-		width: 85%;
-		margin-left: 3%;
+		width: 80%;
+		margin-left: 5%;
+		margin-right: auto;
 	}
 
 	.blogers__heading {
@@ -104,24 +105,35 @@
 	}
 
 	.blogers__berry3__img {
-		right: 3%;
-		top: 40px;
+		right: 2%;
+		top: 20px;
+		width: 50%;
 	}
 
 	.blogers__berry2__img {
-		left: 3%;
-		top: 250px;
+		left: 1%;
+		top: 30%;
+		width: 50%;
 	}
 
 	.blogers__berry1__img {
-		left: 20%;
-		bottom: -50px;
+		left: 50%;
+		bottom: 50px;
+		width: 40%;
 	}
 
 	.blogers__header {
 		margin: 0;
-		top: 10px;
+		top: 20px;
 		left: 23%;
 		font-size: 30px;
+	}
+
+	.blogers__heading{
+		font-size: 20px;
+	}
+
+	.blogers__text1{
+		font-size: 14px;
 	}
 }
