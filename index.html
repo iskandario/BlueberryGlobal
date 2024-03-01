@@ -191,37 +191,51 @@
 			</div>
 
 		</footer>
-	</div>
+		</div>
 
-	<script>
-		document.addEventListener('DOMContentLoaded', () => {
-			const slides = document.querySelectorAll('.slide');
-			let currentIndex = 0;
+		<!-- <script>
+		function adjustBottomContainerHeight() {
+			var planet = document.querySelector('.header__planet');
+			var planetHeight = planet.offsetHeight;
+			var containerBottom = document.querySelector('.header__containerBox');
 
-			function switchSlide(newIndex) {
-				slides[currentIndex].classList.remove('active');
-				slides[newIndex].classList.add('active');
-				currentIndex = newIndex;
-			}
+			containerBottom.style.height = planetHeight - 800 + 'px';
+		}
 
-			function initSlider() {
-				slides[currentIndex].classList.add('active');
-				document.querySelector('.left').addEventListener('click', () => {
-					const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
-					switchSlide(newIndex);
-				});
-
-				document.querySelector('.right').addEventListener('click', () => {
-					const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
-					switchSlide(newIndex);
-				});
-			}
-
-			initSlider();
-		});
+		document.addEventListener('DOMContentLoaded', adjustBottomContainerHeight);
+		window.addEventListener('resize', adjustBottomContainerHeight);
+	</script> -->
 
 
-	</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+				const slides = document.querySelectorAll('.slide');
+				let currentIndex = 0;
+
+				function switchSlide(newIndex) {
+					slides[currentIndex].classList.remove('active');
+					slides[newIndex].classList.add('active');
+					currentIndex = newIndex;
+				}
+
+				function initSlider() {
+					slides[currentIndex].classList.add('active');
+					document.querySelector('.left').addEventListener('click', () => {
+						const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+						switchSlide(newIndex);
+					});
+
+					document.querySelector('.right').addEventListener('click', () => {
+						const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+						switchSlide(newIndex);
+					});
+				}
+
+				initSlider();
+			});
+
+
+		</script>
 </body>
 
 </html>
