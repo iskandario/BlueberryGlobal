@@ -69,6 +69,7 @@
 }
 
 .blogers__header {
+	margin: 0;
 	position: relative;
 	top: 3%;
 	left: 28.5%;
