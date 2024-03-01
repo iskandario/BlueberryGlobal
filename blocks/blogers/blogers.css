@@ -1,7 +1,7 @@
 .blogers {
 	/* border: solid 1px red; */
 	background-color: #374055;
-	height: 900px;
+	height: 1028px;
 	position: relative;
 }
 .blogers__img {
@@ -28,7 +28,7 @@
 	width: 60%;
 }
 .blogers__heading {
-	margin-left: 12%;
+	margin-left: 74px;
 	font-family: NEXTART;
 	font-size: 20px;
 	font-weight: 400;
@@ -73,7 +73,7 @@
 	bottom: -95px;
 }
 
-.blogers__header {
+.blogers__header{
 	position: relative;
 	top: 3%;
 	left: 28.5%;

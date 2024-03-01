@@ -115,8 +115,8 @@
 
 .header__planet {
 	position: absolute;
-	z-index: 2;
 	bottom: 0px;
+	z-index: 2;
 	width: 100%;
 	min-width: 856px;
 }

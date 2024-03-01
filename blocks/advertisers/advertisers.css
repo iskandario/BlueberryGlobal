@@ -1,5 +1,5 @@
 .advertisers{
-  height: 600px;
+  height: 698px;
   position: relative;
   background-color: #0F151D;
 }
@@ -16,11 +16,11 @@
 	margin-left: auto;
 	margin-right: auto;
 	min-width: 520px;
-	width: 60%;
+	width: 55%;
 }
 
 .advertisers__heading{
-	margin-left: 12%;
+	margin-left: 74px;
 	font-family: NEXTART;
 	font-size: 20px;
 	font-weight: normal;
@@ -56,13 +56,3 @@
   top: 180px;
   left: 50%;
 }
-
- .advertisers__header{
-	position: relative;
-	left: 28.5%;
-	bottom: -2%;
-	font-family: NEXTART;
-	font-size: 35px;
-	font-weight: 600;
-	color: white;
- }
