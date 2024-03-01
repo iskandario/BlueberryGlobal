@@ -191,51 +191,37 @@
 			</div>
 
 		</footer>
-		</div>
+	</div>
 
-		<!-- <script>
-		function adjustBottomContainerHeight() {
-			var planet = document.querySelector('.header__planet');
-			var planetHeight = planet.offsetHeight;
-			var containerBottom = document.querySelector('.header__containerBox');
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const slides = document.querySelectorAll('.slide');
+			let currentIndex = 0;
 
-			containerBottom.style.height = planetHeight - 800 + 'px';
-		}
+			function switchSlide(newIndex) {
+				slides[currentIndex].classList.remove('active');
+				slides[newIndex].classList.add('active');
+				currentIndex = newIndex;
+			}
 
-		document.addEventListener('DOMContentLoaded', adjustBottomContainerHeight);
-		window.addEventListener('resize', adjustBottomContainerHeight);
-	</script> -->
+			function initSlider() {
+				slides[currentIndex].classList.add('active');
+				document.querySelector('.left').addEventListener('click', () => {
+					const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+					switchSlide(newIndex);
+				});
 
+				document.querySelector('.right').addEventListener('click', () => {
+					const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+					switchSlide(newIndex);
+				});
+			}
 
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
-				const slides = document.querySelectorAll('.slide');
-				let currentIndex = 0;
-
-				function switchSlide(newIndex) {
-					slides[currentIndex].classList.remove('active');
-					slides[newIndex].classList.add('active');
-					currentIndex = newIndex;
-				}
-
-				function initSlider() {
-					slides[currentIndex].classList.add('active');
-					document.querySelector('.left').addEventListener('click', () => {
-						const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
-						switchSlide(newIndex);
-					});
-
-					document.querySelector('.right').addEventListener('click', () => {
-						const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
-						switchSlide(newIndex);
-					});
-				}
-
-				initSlider();
-			});
+			initSlider();
+		});
 
 
-		</script>
+	</script>
 </body>
 
 </html>
