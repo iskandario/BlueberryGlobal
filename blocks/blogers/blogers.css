@@ -1,91 +1,177 @@
 .blogers {
-	/* border: solid 1px red; */
-	background-color: #374055;
-	height: 1028px;
-	position: relative;
+  background-color: #374055;
+  height: 900px;
+  position: relative;
 }
-.blogers__img {
-	position: relative;
-	margin-top: 5.5%;
-	margin-left: 30%;
-	z-index: 2;
-}
-.container {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	width: 100%; /* или max-width для ограничения ширины */
-	padding: 20px; /* Подстройте отступы по вашему дизайну */
-}
+
+
 .blogers__text-section {
-	position: relative;
-	z-index: 3;
-	list-style-type: none;
-	margin-top: 70px;
-	margin-left: auto;
-	margin-right: auto;
-	min-width: 520px;
-	width: 80%;
+  position: relative;
+  padding-left: 0;
+  z-index: 3;
+  list-style-type: none;
+  margin-top: 40px;
+  margin-left: 7%;
+  margin-right: auto;
+  min-width: 520px;
+  width: 80%;
 }
-.blogers__heading {
-	margin-left: 74px;
-	font-family: NEXTART;
-	font-size: 20px;
-	font-weight: 400;
-	color: white;
+.blogers__subtitle {
+  margin-top: 0;
+  margin-left: 12%;
+  font-family: NEXTART;
+  font-size: clamp(0.94rem, calc(0.73rem + 1.04vw), 1.56rem);
+  font-weight: 400;
+  color: white;
 }
 .blogers__item {
-	margin-top: 35px;
-	height: 92px;
+  margin-top: 20px;
+  height: 92px;
+  margin-bottom: 10px;
 }
 .blogers__text1 {
-	font-family: 'Plus Jakarta Sans', sans-serif;
-	font-weight: 550;
-	font-size: 14px;
-	font-style: normal;
-	background-image: linear-gradient(20deg, #6c81bd 20%, #90ca94);
-	-webkit-background-clip: text;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
-	color: transparent;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 550;
+  font-size: clamp(0.44rem, calc(0.17rem + 1.34vw), 1.13rem);
+  font-style: normal;
+  background-image: linear-gradient(20deg, #6c81bd 20%, #90ca94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  margin-bottom: 15px;
 }
 
 .blogers__item:not(:last-child) {
-	border-bottom: 1.5px solid white;
+  border-bottom: 1.5px solid white;
 }
 
 .blogers__berry1__img,
 .blogers__berry2__img,
 .blogers__berry3__img {
-	position: absolute;
-	z-index: 1;
+  position: absolute;
+  z-index: 1;
 }
 .blogers__berry3__img {
-	right: 1%;
-	top: 50px;
+  right: 1%;
+  top: 50px;
 }
 .blogers__berry2__img {
-	left: 1%;
-	top: 314px;
+  left: 1%;
+  top: 20%;
 }
 .blogers__berry1__img {
-	left: 40%;
-	bottom: -95px;
+  left: 40%;
+  bottom: 60px;
 }
 
-.blogers__header{
-	position: relative;
-	top: 3%;
-	left: 28.5%;
-	font-family: NEXTART;
-	font-size: 35px;
-	font-weight: 400;
-	color: white;
+.blogers__title {
+  position: relative;
+  margin-top: 0;
+  z-index: 3;
+  margin-left: 17%;
+  font-family: NEXTART;
+  font-size: 35px;
+  font-weight: 400;
+  color: white;
+  max-width: 100%;
+}
+
+@media (max-width: 860px) {
+  .blogers {
+    height: 800px;
+  }
+
+  .blogers__text-section {
+    min-width: 0;
+    width: 80%;
+    margin-left: 8%;
+    margin-right: auto;
+  }
+
+  .blogers__subtitle {
+    margin-left: 16%;
+  }
+
+  .blogers__item {
+    height: auto;
+  }
+
+
+
+  .blogers__berry3__img {
+    right: 2%;
+    top: 20px;
+    width: 50%;
+  }
+
+  .blogers__berry2__img {
+    left: 1%;
+    top: 30%;
+    width: 50%;
+  }
+
+  .blogers__berry1__img {
+    left: 50%;
+    bottom: 50px;
+    width: 40%;
+  }
+
+  .blogers__title {
+    font-size: 30px;
+    margin-left: 21%;
+  }
+
+  .blogers__subtitle{
+    font-size: 20px;
+  }
+
+  
 }
 
 
-@media screen and(max-width: 500px){
-	.blogers__text1{
-		
-	}
+@media (max-width: 560px){
+  .blogers{
+    height: 700px;
+  }
+  .blogers__subtitle{
+    font-size: 18px;
+  }
+  .blogers__title{
+    font-size: 27px;
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 480px){
+  .blogers{
+    height: 600px;
+  }
+  .blogers__subtitle{
+    font-size: 15px;
+  }
+  .blogers__title{
+    font-size: 24px;
+    margin-left: 21%;
+  }
+  .blogers__text1{
+    font-size: 9px;
+  }
+}
+@media (max-width: 370px){
+  .blogers__text1{
+    font-size: 8px;
+  }
+}
+
+@media (min-width: 860px){
+  .blogers__item{
+    height: 100px;
+  }
+
+
+#first{
+  height: 110px;
+}
+
 }
