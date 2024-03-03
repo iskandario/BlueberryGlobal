@@ -5,6 +5,10 @@
 	max-width: 2000px;
 }
 
+.displayOFF {
+	display: none;
+}
+
 .flexboxCont {
 	display: flex;
 	justify-content: space-between;

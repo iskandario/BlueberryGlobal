@@ -191,4 +191,36 @@
 	.footer__aboutUs {
 		display: none;
 	}
+
+	.footer__aboutUs-author {
+		display: block;
+		margin: 0;
+		margin-top: ;
+		margin-top: 57px;
+		margin-left: 10px;
+	}
+
+	.footer__columns {
+		margin: 0;
+		margin-top: 45px;
+	}
+
+	.footer__contacts {
+		margin-left: 20px;
+	}
+
+	.footer__contacts-title {
+		margin-bottom: 5px;
+	}
+
+	.footer__nav {
+		margin-right: 1%;
+	}
+	.footer__item {
+		margin-left: 25px;
+	}
+
+	.footer__nav-title {
+		margin-left: 25px;
+	}
 }
