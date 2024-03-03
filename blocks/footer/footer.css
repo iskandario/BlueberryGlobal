@@ -35,7 +35,7 @@
 	white-space: nowrap;
 	margin: -1px;
 	margin-top: 7.5%;
-	margin-left: 2.7%;
+	margin-left: 7%;
 	color: aliceblue;
 	font-family: NEXTART;
 	letter-spacing: 0px;
@@ -72,6 +72,11 @@
 	); /* Адаптивный размер текста с минимальным и максимальным значениями */
 	right: -1.5%;
 	bottom: 8.5%;
+	z-index: 5;
+}
+.footer__button:hover {
+	opacity: 0.8;
+	cursor: pointer;
 }
 
 .footer__columns {
@@ -153,29 +158,24 @@
 	font-weight: bold;
 }
 
-
-
-
-
-
-@media screen and (min-width: 860px){
-	.footer__contacts-title{
+@media screen and (min-width: 860px) {
+	.footer__contacts-title {
 		margin: 0;
 		margin-left: 20px;
 	}
 
-	.footer__contacts-copy{
+	.footer__contacts-copy {
 		margin: 0;
 		margin-left: 20px;
 	}
 }
 
-@media screen and (min-width: 1050px){
-	.footer__contacts-title{
+@media screen and (min-width: 1050px) {
+	.footer__contacts-title {
 		margin: 0;
 		margin-left: 30px;
 	}
-	.footer__contacts-copy{
+	.footer__contacts-copy {
 		margin: 0;
 		margin-left: 30px;
 	}
