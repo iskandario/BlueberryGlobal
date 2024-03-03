@@ -105,6 +105,12 @@
 		bottom: 1%;
 		width: 25%;
 	}
+
+
+	.blogers__text1{
+		background-image: linear-gradient(20deg, #6c81bd 10%, #90ca94 50%);
+
+	}
 }
 
 
@@ -140,6 +146,12 @@
 		bottom: -2%;
 		width: 25%;
 	}
+
+
+	.blogers__text1{
+		background-image: linear-gradient(20deg, #6c81bd 10%, #90ca94 50%);
+
+	}
 }
 
 
@@ -171,6 +183,12 @@
 		bottom: 2%;
 		width: 30%;
 	}
+
+
+	.blogers__text1{
+		background-image: linear-gradient(20deg, #6c81bd 10%, #90ca94 50%);
+
+	}
 }
 
 
@@ -201,6 +219,12 @@
 		left: 50%;
 		bottom: -2%;
 		width: 35%;
+	}
+
+
+	.blogers__text1{
+		background-image: linear-gradient(20deg, #6c81bd 10%, #90ca94 50%);
+
 	}
 
 }
@@ -236,6 +260,11 @@
 		width: 35%;
 	}
 
+
+	.blogers__text1{
+		background-image: linear-gradient(20deg, #6c81bd 10%, #90ca94 50%);
+
+	}
 
 	
 }
