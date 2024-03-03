@@ -16,8 +16,15 @@
 	<div class="page">
 
 		<header class="header" id="header">
-			<div class="header__logo" alt="Логотип"></div>
-			<div class="header__container">
+				<div class="header__logo">
+					<picture class="header__logo">
+						<source media="(max-width: 699px)" srcset="../../images/LogoMobile.svg">
+						<source media="(min-width: 700px)" srcset="../../images/Logo.svg">
+						<img src="../../images/Logo.svg" class="logo" alt="Логотип">
+				</picture>
+					</div>
+		
+				<div class="header__container">
 				<h1 class="header__title">Confronting marketing</h1>
 				<h1 class="header__title2">stereotypes</h1>
 				<div class="flexboxCont">
@@ -33,7 +40,7 @@
 			<img class="header__line" src="./images/line.svg" />
 			<img class="header__planet" src="./images/Planet.svg" />
 			<div class="header__containerBox"></div>
-			<img class="header__img-text" src="./images/we are marketing.svg" alt="Надпись we are marketing" />
+			<img class="header__img-text" src="./images/Are marketing.svg" alt="Надпись we are marketing" />
 			<img class="header__img-eclipse" src="./images/Elipse.svg" alt="Картинка круга со стрелкой">
 		</header>
 
