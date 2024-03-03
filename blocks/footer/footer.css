@@ -153,6 +153,34 @@
 	font-weight: bold;
 }
 
+
+
+
+
+
+@media screen and (min-width: 860px){
+	.footer__contacts-title{
+		margin: 0;
+		margin-left: 20px;
+	}
+
+	.footer__contacts-copy{
+		margin: 0;
+		margin-left: 20px;
+	}
+}
+
+@media screen and (min-width: 1050px){
+	.footer__contacts-title{
+		margin: 0;
+		margin-left: 30px;
+	}
+	.footer__contacts-copy{
+		margin: 0;
+		margin-left: 30px;
+	}
+}
+
 @media screen and (max-width: 855px) {
 	.footer__button {
 		padding: 1% 4% 1% 2%;
