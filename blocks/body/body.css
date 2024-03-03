@@ -2,4 +2,23 @@
 	margin: auto;
 	background-color: #0f151d;
 }
-/*  убрать */
+
+/* Стилизация скроллбара для всего документа */
+::-webkit-scrollbar {
+	width: 4px; /* Ширина скроллбара */
+}
+
+/* Дорожка скроллбара */
+::-webkit-scrollbar-track {
+	background: #263046; /* Цвет фона дорожки */
+}
+
+/* Ручка скроллбара */
+::-webkit-scrollbar-thumb {
+	background: #3d4b71; /* Цвет ручки */
+}
+
+/* Стиль ручки скроллбара при наведении */
+::-webkit-scrollbar-thumb:hover {
+	background: #908d8d; /* Цвет ручки при наведении */
+}
