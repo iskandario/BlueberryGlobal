@@ -194,20 +194,6 @@
 	</div>
 
 	<script>
-		function adjustBottomContainerHeight() {
-			var planet = document.querySelector('.header__planet');
-			var planetHeight = planet.offsetHeight;
-			var containerBottom = document.querySelector('.header__containerBox');
-
-			containerBottom.style.height = planetHeight - 800 + 'px';
-		}
-
-		document.addEventListener('DOMContentLoaded', adjustBottomContainerHeight);
-		window.addEventListener('resize', adjustBottomContainerHeight);
-	</script>
-
-
-	<script>
 		document.addEventListener('DOMContentLoaded', () => {
 			const slides = document.querySelectorAll('.slide');
 			let currentIndex = 0;
