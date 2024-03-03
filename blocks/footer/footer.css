@@ -1,7 +1,8 @@
 .footer {
 	position: relative;
+	/* position: relative; */
 	width: 100%;
-	height: 490px;
+	height: fit-content;
 	background-image: radial-gradient(
 		ellipse farthest-corner at 100% 100%,
 		#1c2435,
@@ -23,20 +24,23 @@
 	min-height: 154px;
 	margin-top: 5%;
 }
+
 .footer__main {
+	margin: 0;
 	position: relative;
-	width: 800px;
-	margin-left: auto;
-	margin-right: auto;
+	width: max-content;
 }
 .footer__main-text {
-	margin: 0;
-	margin-top: 50px;
+	width: max-content;
+	white-space: nowrap;
+	margin: -1px;
+	margin-top: 7.5%;
+	margin-left: 2.7%;
 	color: aliceblue;
 	font-family: NEXTART;
-	letter-spacing: -1px;
+	letter-spacing: 0px;
 	font-style: normal;
-	font-size: 85px;
+	font-size: clamp(5.31rem, calc(3.02rem + 4.28vw), 6.88rem);
 	font-weight: 400;
 	background-image: linear-gradient(
 		195deg,
@@ -52,18 +56,22 @@
 }
 
 .footer__button {
+	margin: 0;
 	position: absolute;
 	color: #1c2435;
 	background-color: #fff;
 	border: none;
-	border-radius: 25px;
-	padding: 0.9% 5% 0.9% 1.8%;
-	margin-right: 5.5%;
-	margin-bottom: 1.8%;
+	border-radius: 25px; /* Фиксированное значение для сохранения формы */
+	padding: 0.9% 5% 0.9% 1.8%; /* Относительные значения для адаптивности, но можно добавить min-padding и max-padding через медиазапросы */
 	font-weight: 600;
 	font-size: 1.75vw;
-	right: -22px;
-	bottom: 2px;
+	font-size: clamp(
+		12px,
+		1.75vw,
+		22px
+	); /* Адаптивный размер текста с минимальным и максимальным значениями */
+	right: -1.5%;
+	bottom: 8.5%;
 }
 
 .footer__columns {
@@ -75,14 +83,13 @@
 }
 .footer__aboutUs {
 	width: 63%;
-	margin-left: 69px;
-	margin-right: 30px;
+	margin-left: 7%;
 }
 
 .footer__aboutUs-title {
 	margin: 0;
 	margin-bottom: 17px;
-	font-size: 14px;
+	font-size: clamp(0.63rem, calc(0.45rem + 0.89vw), 1.25rem);
 	font-weight: bold;
 }
 
@@ -90,14 +97,15 @@
 	line-height: 1.26;
 	margin-top: 2px;
 	margin-bottom: 87px;
-	font-size: 14px;
+	font-size: clamp(0.63rem, calc(0.45rem + 0.89vw), 1.25rem);
 	font-weight: 550;
 	color: #9b9b9c;
 }
 
 .footer__aboutUs-author {
+	white-space: nowrap;
 	margin-bottom: 36px;
-	font-size: 14px;
+	font-size: clamp(0.63rem, calc(0.45rem + 0.89vw), 1.25rem);
 	font-weight: Bold;
 }
 
@@ -107,7 +115,7 @@
 
 .footer__nav-title {
 	margin: 0;
-	font-size: 14px;
+	font-size: clamp(0.63rem, calc(0.45rem + 0.89vw), 1.25rem);
 	margin-left: 10px;
 }
 
@@ -118,21 +126,22 @@
 }
 
 .footer__item {
+	white-space: nowrap;
 	margin: 0 10px;
 	line-height: 2.5;
 	color: #9b9b9c;
-	font-size: 14px;
+	font-size: clamp(0.63rem, calc(0.45rem + 0.89vw), 1.25rem);
 	font-weight: bold;
 }
 
 .footer__contacts {
-	margin-right: 40px;
+	margin-right: 5%;
 }
 
 .footer__contacts-title {
 	margin: 0;
 	margin-left: 10px;
-	font-size: 14px;
+	font-size: clamp(0.63rem, calc(0.45rem + 0.89vw), 1.25rem);
 	font-weight: bold;
 }
 
@@ -140,35 +149,46 @@
 	margin: 0 10px;
 	line-height: 2.5;
 	color: #9b9b9c;
-	font-size: 14px;
+	font-size: clamp(0.63rem, calc(0.45rem + 0.89vw), 1.25rem);
 	font-weight: bold;
 }
 
-@media screen and (min-width: 1100px) {
+@media screen and (max-width: 855px) {
 	.footer__button {
-		right: 10px;
+		padding: 1% 4% 1% 2%;
 	}
-	.footer__main {
-		width: 900px;
-	}
-
 	.footer__main-text {
-		font-size: 90px;
+		margin: 0;
+		margin-left: 7%;
+		font-size: clamp(1.88rem, calc(-0.07rem + 9.73vw), 5.31rem);
 	}
 }
 
-@media screen and (min-width: 1250px) {
-	.footer__button {
-		right: 10px;
-		padding: 8.1px 45px 8.1px 16.2px;
-		font-size: 20px;
-		bottom: 0px;
-	}
+@media screen and (max-width: 700px) {
 	.footer__main {
-		width: 900px;
+		margin: 0;
+		margin-top: 14px;
 	}
-
 	.footer__main-text {
-		font-size: 90px;
+		margin: 0;
+		margin-left: 11px;
+		letter-spacing: 1.2px;
+		line-height: 92%;
+	}
+	.footer__button {
+		font-size: 14px;
+		padding: 2.4% 11.8% 2.8% 4.5%;
+		margin-top: 19px;
+		margin-left: 25px;
+		position: relative;
+	}
+	.footer__contacts {
+		order: 1;
+	}
+	.footer__nav {
+		order: 2;
+	}
+	.footer__aboutUs {
+		display: none;
 	}
 }
