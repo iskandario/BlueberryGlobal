@@ -106,7 +106,6 @@
 	top: 0px;
 	z-index: 1;
 	width: 100%;
-	min-width: 856px;
 }
 .header__containerBox {
 	margin-top: 520px;
@@ -212,7 +211,7 @@
 	}
 
 	.header__logo {
-		background-image: url('../../images/LogoMobile.svg');
+		background-image: url('../../images/LogoMobile.png');
 	}
 }
 
