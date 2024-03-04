@@ -8,7 +8,7 @@
 
 .header__logo {
 	height: 14.3525vw;
-	width: 10.105vw;
+	width: 13.105000000000004vw;
 	background-image: url('../../images/Logo.svg');
 	background-size: cover;
 	background-position: center;
@@ -130,12 +130,42 @@
 	right: 10px;
 }
 
-.header__img-text {
-	position: absolute;
-	right: 49px;
-	bottom: 70px;
-	z-index: 4;
+.header__text__marketing {
+  position: absolute;
+  right: 49px;
+  bottom: 70px;
+  z-index: 4;
+  font-family: 'NEXTART', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  color: transparent;
+  background-image: linear-gradient(195deg, #6c81bd 25%, #90ca94);
+  -webkit-background-clip: text;
+  background-clip: text;
+  line-height: 0.9; /* Уменьшенное значение для уменьшения расстояния между строками */
 }
+
+.header__text__we, .header__text__are {
+  display: inline; 
+}
+
+.header__text__we{
+	padding-left: 36%;
+}
+
+.header__text__are {
+  font-weight: 300; /* Делает текст тоньше, убедитесь, что используете правильное значение для вашего шрифта */
+  margin-right: 4px; /* Небольшой отступ между ARE и MARKETING, если необходим */
+}
+
+.header__text__marketing {
+  display: block; /* Это заставит "MARKETING" начаться с новой строки */
+  margin-top: -10px; /* Отрицательный верхний отступ для приближения к "WE ARE" */
+}
+
+
+
+
 
 @media screen and (max-width: 699px) {
 	.header__img-text {
@@ -186,8 +216,21 @@
 	}
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 500px) {
+	.header__text__marketing{
+		font-size: 20px;
+	}
+	.header__text__we{
+		padding-left: 34%;
+	}
 }
+
+
+@media screen and (max-width: 320px) {
+	.header__planet{ margin-top: -5%;}
+}
+
+
 
 @media screen and (min-width: 700px) {
 	.header__logo {
